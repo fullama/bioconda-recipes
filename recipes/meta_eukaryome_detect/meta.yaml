@@ -10,7 +10,7 @@ source:
   sha256: 0199ad179d36d3683b8122f41b1e5db6c5d7d94324c3fe5187d576fafdfa2cdc
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - meta_eukaryome_detect = meta_eukaryome_detect.meta_eukaryome_detect:main
   script: "{{ PYTHON }} -m pip install . -vv --ignore-installed --no-deps"
@@ -24,7 +24,7 @@ requirements:
     - python >=3.11
     - poetry
   run:
-    - ngless
+    - ngless <1.6
     - samtools
     - pandas >=2.0
     - requests
